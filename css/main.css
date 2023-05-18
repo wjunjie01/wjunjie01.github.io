@@ -1,0 +1,48 @@
+h1
+{
+    font-family: "Comic Sans MS";
+    font-variant: small-caps;
+    color: deeppink;
+    background-color: cyan;
+    margin: 15px;
+    border: ridge 10px grey;
+    text-align: center;
+}
+table
+{
+    margin: 0 auto;
+    text-align: center;
+    color:azure;
+    outline-color: darkgrey;
+    font-family: "Times New Roman", Calibri;
+}
+img
+{
+    display: block;
+    margin: 0 auto;
+}
+th
+{
+    color:darkmagenta;
+    font-size: 20px;
+}
+body
+{
+    background-color: black;
+}
+section{
+    display: inline-block;
+    width: 45%;
+    color: aliceblue;
+    float: left;
+}
+h2{
+    color: cyan;
+    border-style: inset;
+    border: 2px color white;
+    text-align: center;
+    margin: 10px;
+}
+details{
+    font-style: italic;
+}

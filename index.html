@@ -9,6 +9,8 @@
     
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!-- <link rel = "shortcut icon" type ="image/png" href="icon/coding (1).png" > -->
+    <link rel = "shortcut icon" type = "image/favicon" href="icon/favicon.ico">
 
 <!-- jQuery library -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -22,13 +24,57 @@
         body{
             padding-top: 70px;
         }
+        
+        @keyframes animation_type{
+            from {width: 0;}
+            to {width: 100%;}
+        }
+        @keyframes animation_blink{
+            from, to{
+                border-color: transparent;
+            }
+            50%{
+                border-color: olivedrab;
+            }
+        }
+
+        section{
+            display: inline-block;
+            justify-content: center;
+            margin-left: 36%;
+        }
+        
+        .animation_play{
+    font-size: 3.5vw;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        animation_type 2s steps(30, end),
+        animation_blink 1s step-end infinite;
+        }
+        .animation_text{
+    font-size: 1.5vw;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        animation_type 3s steps(50,end)
+        }
     </style>
-    <title> Personal Webpage</title>
+    <title> Home</title>
 </head>
-    
+<section>
+<h1 class = "animation_play"> Hello World</h1>    
+</section>
 <body>
 <nav class = "navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <!--<ul class = "nav nav-tabs">-->
+    
     <img src = "https://www.comp.nus.edu.sg/images/resources/content/undergraduates/2020_UG_Icons_ISC_2.png" alt="Logo" class = "mx-2" style="width:40px;">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -55,54 +101,15 @@
     </ul>
     </div>
     </nav>
-
-    <div class = "col-md-6">
-    <table border = "5" class = "table">
-        <thead class = "thead-dark">
-        <tr> 
-            <th>YEAR / SEM:</th><th> MODULES TAKEN:</th> <th> ENJOYMENT OF THE MODULE: </th>
-        </tr>
-        </thead>
-        <tr>
-            <td rowspan="6"> Y1S1 </td> <td> CS1010 </td> <td> 5/5 </td></tr>
-        <tr> <td> CS1231S </td> <td> 3/5 </td></tr>
-        <tr> <td> MA1521 </td> <td> 4/5 </td> </tr>
-        <tr> <td> IS1108 </td> <td> 2/5 </td> </tr>
-        <tr> <td> RVSS1002 </td> <td> 3/5 </td> </tr>
-        <tr> <td> CFG1002 </td> <td> 0/5 </td> </tr>
-        
-        <tr>
-            <td rowspan="6"> Y1S2 </td> <td> CS2040C </td> <td> 5/5 </td></tr>
-        <tr> <td> CS2100 </td> <td> 3/5 </td></tr>
-        <tr> <td> MA2001 </td> <td> 1/5 </td> </tr>
-        <tr> <td> GEA1000 </td> <td> 0/5 </td> </tr>
-        <tr> <td> ST2334 </td> <td> 3/5 </td> </tr>
-        <tr> <td> RVC1000 </td> <td> 4/5 </td> </tr>   
-    </table>
-        </div>
-    <br>
-    <div class = 'row'>
-        <section class = "col-md-5"> 
-    <h2> More About Me</h2>
-<!-IT means that by default the details are open, don't have to click on it>
-        <details open> 
-            <summary> My childhood </summary>
-            <p> I grew up on the sunny island of Singapore. Located near the equator, Singapore is hot all year long and the heat can be 
-            unbearable some times. 
-                <br>I wish to visit a cold country soon! </p>
-        </details>
-    </section>
-        <section class = "col-md-5" >
-    <h2> Favourite Foods </h2>
-        <ul>
-            <li> Bak Kut TEH! </li>
-            <li> Some GOOOOD Unagi AND SUSHI, yummsss yums! </li>
-            <li> Can't go wrong with fried chicken! </li>
-            <li> Wanton mee, my comfort food! </li>
-        </ul>
-    </section>
+    <div class = "container text-center">
+    <p class = "animation_text"> This is an experimental site developed during the summer. </p>
+    <p class = "animation_text"> It contains resources to guide freshmen in their matriculation. </p>
+     </div>
+    <div class = "container" style = "width: 60%;">
+        <img class="img-fluid rounded" src = "img/IT.png" alt = "Cute Information Technology Picture">
     </div>
     
+    <p> Photo extracted from: <a href="https://nusit.nus.edu.sg/wp-content/uploads/2022/06/bITbIT_security-11-440x260.png"> NUS Information Technology </a></p>
     <footer> &copy; Wong Jun Jie 2023</footer>
 </body>
     

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta content = "width=device-width, initial-scale = 1">
+    <link rel="stylesheet" href = "css/style_index4.css">          
+    
+    <title> My 4th iteration pure HTML/CSS</title>
+    <style>
+
+    swiper-container {
+        width: 100%;
+        height: 100%;
+        border: solid 5px white;
+    }
+
+    swiper-slide {
+      background: rgb(50,50,50);
+
+    }
+
+    swiper-slide img {
+        border: solid 2px white;
+        width:40%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    </style>
+</head>
+<body>
+    <header class = "header">
+        <a href = "#" class = "logo"> Jun Jie.</a>
+        <nav class = "navbar"> <!-- By default is a display block-->
+            <a href = "#" class="active"> Home </a>
+            <a href = "#"> About Me </a>
+            <a href = "#"> Projects </a>
+            <a href = "#"> Experience </a>
+            <a href = "#"> Contact </a>
+        </nav>
+    </header>
+    
+    <div class = "blankspace"> </div>
+    
+    <section class = "card">
+        <div class = "card-content">
+        <img class = "card-img" src = "img/avator_2.png" alt = "avatar">
+        <div class = "card-text">
+        <h1> Wong Jun Jie</h1>
+        <h3 style="color:#00abf0"> Year 2 Information Security Student @ NUS</h3>
+        <br>
+        <p> I have a keen interest in the area of ... and so and so. </p>
+        </div>
+        </div>
+    </section>
+    
+    <section class="card" style = "padding: 3% 2% 0% 2%;">
+        <div class = "card-content">
+        <div class = "card-text">
+        <h2 style ="text-align: center;"> My projects</h2>
+        <br> <br>    
+        <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+    css-mode="true">
+        <div class = "swiper-slide">
+            <div class = "carousel-format">
+                <img src="img/App_screen.png" alt = "some logo">
+                <div class = "carousel-text">
+                <h3> Let's shop!</h3>
+                <p> Let's shop is a groceries management application built using React Native. It allows user to find the nearest ..., keep a shopping list and .... </p>
+            </div>
+            </div>
+        </div>
+        <swiper-slide>
+            <div class = "carousel-format">
+                <img src="img/Game.png" alt = "My Game">
+                <div class = "carousel-text">
+                <h3> The Heist</h3>
+                <p> A 2D platformer game that is built using GDscript and Godot. Orbital Project: Apollo-13. </p>
+            </div>
+            </div>
+        </swiper-slide>
+
+        <div class = "swiper-slide">
+            <h1> hi</h1>
+            </div> 
+            
+        <div class = "swiper-wrapper">
+            
+            <h1> hi</h1>
+            </div>
+            
+        <swiper-slide>
+            </swiper-slide>
+        </swiper-container>
+        </div>
+        </div>
+    </section>
+    
+
+    
+    <section class = "card" style = "padding-top: 4%">
+        <div class = "card-content">
+        
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+</html>

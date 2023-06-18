@@ -34,7 +34,7 @@ html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: solid 1px green;
+    border: solid 0px green;
     font-family: var(--body-font);
 
     color: var(--text-color)

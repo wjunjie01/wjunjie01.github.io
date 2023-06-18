@@ -8,9 +8,9 @@
     --text-color: #ffffff;
     --font-semi-bold: 500;
     --font-normal: 300;
-    --h1fontsize: 3.5rem;
+    --h1fontsize: 3rem;
     --h2fontsize: 2rem;
-    --h3fontsize: 1.5rem;
+    --h3fontsize: 1.8rem;
 }
 
 html{
@@ -26,9 +26,8 @@ html{
 }
 
 @media screen and (min-width: 968px){
-    html {font-size: 16px;}
+    html {font-size: 18px;}
 }
-
 
 *{
     box-sizing: border-box;

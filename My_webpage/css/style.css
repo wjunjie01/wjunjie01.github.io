@@ -9,8 +9,11 @@
     --font-semi-bold: 500;
     --font-normal: 300;
     --h1fontsize: 3rem;
+    --h1fontsize2: 8rem;
     --h2fontsize: 2rem;
+    --h2fontsize2: 4rem;
     --h3fontsize: 1.8rem;
+    --h3fontsize2: 3;
 }
 
 html{
@@ -227,10 +230,18 @@ h3{
 
 
 
-@media screen and (min-width: 600px){
+@media screen and (max-width: 600px){
+    h1{
+        font-size: var(--h1fontsize2);
+    }
+    h2{
+        font-size: var(--h2fontsize2);
+    }
+    h3{
+        font-size: var(--h3fontsize2);
+    }
     .home_grid{
         grid-template-columns: 1fr;
-        background-color: #00abf0;
     }
     .home_img img{
         max-width: 60%;

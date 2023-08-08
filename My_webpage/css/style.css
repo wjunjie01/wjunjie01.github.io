@@ -9,9 +9,9 @@
     --font-semi-bold: 500;
     --font-normal: 300;
     --h1fontsize: 3rem;
-    --h1fontsize2: 4rem;
+    --h1fontsize2: 2.6rem;
     --h2fontsize: 2rem;
-    --h2fontsize2: 3.5rem;
+    --h2fontsize2: 2.5rem;
     --h3fontsize: 1.8rem;
     --h3fontsize2: 2.4rem;
 }
@@ -53,6 +53,12 @@ h3{
     padding: 1rem 1rem 1rem 1rem;
     z-index: 100;
     background-color: var(--background-color);
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        display: none;
+    }
 }
 
 .navbar a{
@@ -229,7 +235,7 @@ h3{
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 900px){
     h1{
         font-size: var(--h1fontsize2);
     }
@@ -343,6 +349,12 @@ section:nth-child(even){
 .project2_grid{
     display: grid;
     grid-template-columns: .5fr 2fr 2fr .5fr;
+}
+
+@media screen and (max-width: 900px) {
+    .project2_grid{
+        grid-template-columns: 1fr;
+    }
 }
 
 

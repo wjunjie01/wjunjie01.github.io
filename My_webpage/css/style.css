@@ -9,11 +9,11 @@
     --font-semi-bold: 500;
     --font-normal: 300;
     --h1fontsize: 3rem;
-    --h1fontsize2: 8rem;
+    --h1fontsize2: 4rem;
     --h2fontsize: 2rem;
-    --h2fontsize2: 4rem;
+    --h2fontsize2: 3.5rem;
     --h3fontsize: 1.8rem;
-    --h3fontsize2: 3;
+    --h3fontsize2: 2.4rem;
 }
 
 html{
@@ -224,7 +224,6 @@ h3{
 .home_grid{ 
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: red;
 }
 
 
@@ -241,6 +240,7 @@ h3{
         font-size: var(--h3fontsize2);
     }
     .home_grid{
+        margin-top: 10vh;
         grid-template-columns: 1fr;
     }
     .home_img img{
@@ -248,15 +248,15 @@ h3{
     }
 }
 
+/*
 @media screen and (max-width: 900px){
     .home_grid{
-        grid-template-columns: 5fr .5fr;
-        background-color: aquamarine;
+        grid-template-columns: 1fr;
     }
     .home_img img{
         max-width: 60%;
     }
-}
+}*/
 
 
 section:nth-child(odd){

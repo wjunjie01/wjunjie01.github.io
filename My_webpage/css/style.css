@@ -13,7 +13,7 @@
     --h2fontsize: 2rem;
     --h2fontsize2: 2.5rem;
     --h3fontsize: 1.8rem;
-    --h3fontsize2: 2.4rem;
+    --h3fontsize2: 2.2rem;
 }
 
 html{
@@ -348,7 +348,7 @@ section:nth-child(even){
 
 .project_grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: .5fr 3fr .5fr;
 }
 
 .project2_grid{
@@ -356,10 +356,21 @@ section:nth-child(even){
     grid-template-columns: .5fr 2fr 2fr .5fr;
 }
 
+.game_pic{
+    max-height: 80%;
+}
+
 @media screen and (max-width: 900px) {
     .project2_grid{
         grid-template-columns: 1fr;
     }
+    .game_pic{
+        max-height: 50vh;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        scale: .5;
+    }
+
 }
 
 

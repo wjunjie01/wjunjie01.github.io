@@ -342,9 +342,7 @@ section:nth-child(even){
     margin-right: auto;
 }
 
-#img1{
-    width: 60%;
-}
+
 
 .project_grid{
     display: grid;
